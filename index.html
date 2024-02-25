@@ -3,20 +3,37 @@
     <head>
         <title>Bijtend Blanco</title>
         <style>
+            * {
+                margin: 0;
+            }
+            
             body {
                 font-family: Helvetica, Arial, sans-serif;
+                display: grid;
+                grid-template-columns: 1fr 2fr 2fr 1fr;
+                grid-template-rows: 1fr 2fr 2fr 1fr;
+                gap: 1px;
+                min-height: 100dvh;
+            }
+
+            .splash {
+                grid-column: 3;
+                grid-row: 3;
             }
 
             h1 {
                 text-transform: uppercase;
                 font: 400 4rem/0.85 Helvetica, Arial, sans-serif;
+                filter: blur(3.5px) contrast(10);
             }
         </style>
     </head>
     <body>
-        <h1>
-            Bijtend<br>Blanco
-        </h1>
+        <div class="splash">
+            <h1>
+                Bijtend<br>Blanco
+            </h1>
+        </div>
         <!--
         <header class="logo">
             <h1 class="logo__heading">
